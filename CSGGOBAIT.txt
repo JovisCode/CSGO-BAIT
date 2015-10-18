@@ -1,0 +1,819 @@
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta charset="utf-8">
+<title>CSGOBAIT.COM</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta name="viewport" content="width=1180">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=" http://csgopoor.com/css/framework/normalize.css">
+<link rel="stylesheet" href=" http://csgopoor.com/css/framework/foundation.min.css">
+<link href="http://csgopoor.com/css/widgets.css" rel="stylesheet" media="screen">
+<link href="http://csgopoor.com/css/all.css?v=14" rel="stylesheet" media="screen">
+<!--[if gte IE 9]><link rel="stylesheet" href="/css/ie9.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" media="screen, projection"><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" media="screen, projection"><![endif]-->
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="http://csgopoor.com/js/libs/jquery-2.1.3.min.js"></script><style type="text/css"></style>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="http://csgopoor.com/js/libs/jquery-ui.min.js"></script>
+<script src="http://csgopoor.com/js/framework/vendor/modernizr.js"></script>
+<script src="http://csgopoor.com/js/framework/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+<script src="http://csgopoor.com/js/plugins/backgroundimg.js"></script>
+<script src="http://csgopoor.com/js/plugins/jquery.tablesorter.min.js"></script>
+<script src="http://csgopoor.com/js/jquery.noty.packaged.min.js"></script>
+<script src="http://csgopoor.com/js/jquery.cookie.js"></script>
+<script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
+<script src="http://csgopoor.com/script.js"></script>
+<script type="text/javascript">
+		var socket = io('keylucky.com:1731');
+		var key = 'demo';
+		socket.emit("auth", key);
+	</script>
+<meta class="foundation-mq-topbar"></head>
+<body id="main-page">
+<div class="wrapper">
+<audio style="display:none;" id="chatAudio"><source src="/file/message.mp3" type="audio/mpeg"></audio>
+<audio id="chatmsg" style="display:none;"><source src="/file/msg2.mp3" type="audio/mpeg"></audio>
+<audio id="roller" style="display:none;"><source src="/file/roller.mp3" type="audio/mpeg"></audio>
+<header class="header" role="banner">
+<div class="container">
+<div class="header-left">
+<div class="logo-holder">
+<h1 class="logo"><a href="/"><img src="http://i.imgur.com/HGTkXMU.png"></a></h1>
+</div>
+</div>
+<div class="header-right">
+<div class="login">
+<ul class="login-list steamlogin">
+<li><a href="/login" class="action-login login-link"></a></li>
+</ul>
+</div>
+</div>
+</div>
+</header>
+<div class="content-box shown">
+<div class="content-main">
+<div class="content-main-inner">
+<div class="promo">
+ 
+<div class="infos">
+<div class="infos-columns">
+<div class="column-25">
+<div class="column-inner">
+<div class="infos-item">
+</div>
+</div>
+</div>
+<div class="column-25">
+<div class="column-inner">
+<div class="infos-item">
+
+</div>
+</div>
+</div>
+<div class="column-25">
+<div class="column-inner">
+<div class="infos-item">
+</div>
+</div>
+</div>
+<div class="column-25">
+<div class="column-inner">
+<div class="infos-item">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+</div>
+	
+	<div class="game">
+    <div class="game-top">
+        <!--<a class="sound-link sound-link-on"><i class="icon-sound active"></i><span class="text">Sound off</span></a>
+        <a class="sound-link sound-link-off hidden"><i class="icon-sound"></i><span class="text">Sound on</span></a>-->
+
+	<div class="game-title">GAME #<span class="game-num">4384</span></div>
+		<!--<div style="float: right; color: white; font-weight: bold;" class="queue">In queue: <span id="queue-num">0</span>. All <span id="queue-length">0</span></div>
+		-->
+	</div>
+    <div class="game-info gameend hidden">
+        <div class="game-status"><strong>GAME #<span class="game-num">4384</span> - end!</strong></div>
+        <div class="all-players">
+            <div class="all-players-list" style="transform: translate3d(390px, 0px, 0px); transition: 13s ease; backface-visibility: hidden;"></div>
+        </div>
+        <div class="winner">
+            <div class="winner-left">
+                <h3>Winner: <span id="winner-end"> AND THE WINNER IS: </span></h3>
+                <div class="winner-cost">
+                    <span class="winner-cost-title">Jackpot: </span>
+                    <span class="winner-cost-value"></span>
+                </div>
+            </div>
+            <div class="winner-right">
+                <div class="newgame-timer">
+                    <!-- <span class="newgame-timer-title">????? ???? ?????:</span>
+                    <div class="timer countdownHolder">
+						<span class="countMinutes"><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span></span>
+						<span class="countDiv countDiv0">:</span>
+						<span class="countSeconds"><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span></span>
+					</div> -->
+                </div>
+
+                            </div>
+            <span class="arrow-wh-top"></span>
+            <span class="arrow-wh-top"></span>
+            <span class="arrow-wh-top"></span>
+        </div>
+    </div>
+    <div class="game-info gameactive">
+        <div class="game-status">
+            <span class="text" style="color: red; font-weight: bold; font-size: 25px;" id="totalcost"></span>
+        </div>
+        <div class="game-progress">
+            <!-- timer -->
+            <div class="timer countdownHolder" style="display: block;">
+				<!-- <span class="countMinutes"><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">1</span></span></span>
+				<span class="countDiv countDiv0">:</span>
+				<span class="countSeconds"><span class="position"><span class="digit static" style="top: 0px; opacity: 1;">0</span></span><span class="position"><span class="digit" style="top: -2.1em; opacity: 0;">0</span><span class="digit" style="top: 0em; opacity: 1;">0</span></span></span> -->
+                    <div id="timer">200</div>
+
+			</div>
+            <!-- timer end -->
+
+            <div class="or-text" style="display: block;">or</div>
+
+            <!-- progressbar -->
+            <div class="wrap-progressbar" style="box-shadow: none;">
+                <div class="progressbar" data-val="0"></div>
+                <div class="progressbar-text"><span id="items-count-temp" style="font-size:40px; font-weight:bold;">0</span>skins</div>
+                <div class="progressbar-value" id="pb" style="width: 0%;">
+                    <div class="progressbar-stripes" style="background-color: yellow;"></div>
+                </div>
+            </div>
+            <!-- progressbar end -->
+        </div>
+
+        <!-- game-price -->
+
+        <!--<div class="game-price">
+            <div class="game-price-inner">
+                <div class="game-price-content">
+                    <p><span>~ <span id="jackpot-temp">0 ???.</span></span></p>
+                    
+                </div>
+                <div class="game-price-decor-left">
+                    <i class="arrow-wh-right"></i>
+                    <i class="arrow-wh-right"></i>
+                    <i class="arrow-wh-right"></i>
+                    <div>
+                        <span><s></s></span>
+                        <span><s></s></span>
+                    </div>
+                </div>
+                <div class="game-price-decor-right">
+                    <i class="arrow-wh-left"></i>
+                    <i class="arrow-wh-left"></i>
+                    <i class="arrow-wh-left"></i>
+                    <div>
+                        <span><s></s></span>
+                        <span><s></s></span>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- game-price end -->
+<a href="/login" class="btn-yellow action-login come_and_play">
+    <span class="icon-steam"></span>
+    <span class="text">Login</span>
+</a>
+   
+ </div>
+
+    <div class="game-content">
+        <div class="details-wrap"><!-- detailswrapclass -->
+            <div class="details type-second">
+                <div class="details-left">
+                    <p>You deposit: - </p><p class="player-items-num" id="player-items-count">0</p> <span>(of 10)</span> skins<p></p>
+					<div>The minimum amount of placed skins price is 0.01$</div> 
+					<div>Breakout, Phoenix and Chroma cases are not accepted.</div>
+                </div>
+                <i class="arrow-gray-right"></i>
+                <div class="details-middle">
+                    <p>Chance: <b class="details-percent"><span id="chance-temp">0</span>%</b></p>
+                    <!--div><a class="open-drop-count" href="#">??? ??????????</a></div-->
+                </div>
+								<div class="details-right">
+                    REMEMBER TO: Set trade link in settings!
+                </div>	
+				            </div>
+        </div>
+	<div class="gametime gamepause hidden">
+        <img src="/img/clock.png">???? ????????! ???????? ????????? ??????.
+    </div>
+
+	<div class="players-percent-wrap" style="width: 100%; overflow-x: scroll;">
+       <div class="players-percent hidden" style="width: 1400px;">
+            <div class="players-arrows players-left" style="display: none;"></div>
+            <div class="players-tape"></div>
+            <div class="players-arrows players-right" style="display: none;"></div>
+        </div>
+	</div>	
+        
+        <!-- game-table -->
+        <div class="def-table game-table">
+            <table>
+                <tbody id="game"></tbody>
+            </table>
+        </div>
+        <!-- game-table end -->
+        <div class="gametime gamestart">
+            <span class="icon-start"></span>
+            <div class="gametime-text">Game start!</div>
+			<div class="gametime-text">Round hash: <span id="round_hash">06d432f1e1bd81693e92a96fa8a1f8bb</span></div>
+        </div>
+    </div>
+    <p class="steampowered">Powered by Steam, a registered trademark of Valve Corporation.</p>
+</div>
+
+
+<div class="hide-for-small-only hide-for-medium-only chat chat ui-draggable">
+  <header class="ui-draggable-handle">
+    <h2 class="title">
+      <a href="#">CHAT</a>
+    </h2>
+    <ul class="tools">
+	  <li>
+		<a class="fa fa-volume-up soundoff" href="#"></a>
+	  </li>
+      <li>
+        <a class="fa fa-minus closech" href="#"></a>
+      </li>
+    </ul>
+  </header>
+  <div class="main-chat body">
+    <ul class="block-msgs">
+    <li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/56/569530cd147b9a5f7b743e00341cc0c0eba5c01d_full.jpg"></a><div class="content"><h3>Not Pikachu  «»</h3><span class="preview">Lodus wants to lose the ak</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/53/53aaaab284a63468dcafdcb607b9e3cd55b3e2f1_full.jpg"></a><div class="content"><h3>Lockthepot.</h3><span class="preview">LOCKTHEP0T. c0m -&gt; New gambling website with low pots awaiting players now ! Karambit Blue Steel giveaway on fb!</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b4/b48eaa99e60a64a85056724f01e8b04584090567_full.jpg"></a><div class="content"><h3>Aleksyh</h3><span class="preview">bye bye ak47 </span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/eb/ebf47411edb3449cd099dbf7194d384b02aa23ed_full.jpg"></a><div class="content"><h3>Miko </h3><span class="preview">thanks for skinz nerds</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b4/b48eaa99e60a64a85056724f01e8b04584090567_full.jpg"></a><div class="content"><h3>Aleksyh</h3><span class="preview">RIP AK</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/86/868cfdb7da61fb64f52770cd89750d2c2f09743b_full.jpg"></a><div class="content"><h3>Sury-Kat «»</h3><span class="preview">lol</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/97/9775bc61914dc9ebfc782277641bd854875fb96e_full.jpg"></a><div class="content"><h3>epic:D</h3><span class="preview">haha</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/08/08dec67dbf54080b02680c793313871ddece8e09_full.jpg"></a><div class="content"><h3>Mango</h3><span class="preview">retard</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/50/50128602e123071f3bb726d3e62747efd537feed_full.jpg"></a><div class="content"><h3>Spooky Business Mane</h3><span class="preview">rip ak skin</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/be/be963dc0e282d64c477c326e5a1388aae2c681cb_full.jpg"></a><div class="content"><h3>Sasha ?? «»</h3><span class="preview">rekt</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/56/569530cd147b9a5f7b743e00341cc0c0eba5c01d_full.jpg"></a><div class="content"><h3>Not Pikachu  «»</h3><span class="preview">Sorry Sury but he lost the ak</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/72/72f970623e1a5aea324b67930d0780b7f54de932_full.jpg"></a><div class="content"><h3>Anthony the Illest</h3><span class="preview">rekt</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b4/b48eaa99e60a64a85056724f01e8b04584090567_full.jpg"></a><div class="content"><h3>Aleksyh</h3><span class="preview">this AK is ugly tho</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/b4/b48eaa99e60a64a85056724f01e8b04584090567_full.jpg"></a><div class="content"><h3>Aleksyh</h3><span class="preview">srsly</span></div></li></ul>
+  </div>
+
+  <div class="row footer">
+	<div class="large-12 columns">
+	  <div class="row collapse">
+	  		    	<div class="small-2 columns">&nbsp;</div>
+			<div class="small-8 columns">
+		      <a href="/login" class="button tiny postfix btnchat">Login</a>
+		    </div>
+		    <div class="small-2 columns">&nbsp;</div>
+	    	  </div>
+	</div>
+  </div>
+</div>
+
+<!-- Stream -->
+<!-- <div class="stream" style="position: fixed; right: -30px; bottom: 400px;">
+	<div style="width: 300px; height: 30px; background: rgba(255,0,0,0.8); color: white; font-weight: bold; cursor: move;">&nbsp;Official partner</div>
+	<iframe src="http://www.twitch.tv/russiapaver/embed" frameborder="0" scrolling="no" height="300" width="300"></iframe><a href="http://www.twitch.tv/russiapaver?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from RussiaPaver on www.twitch.tv</a>
+</div> -->
+
+<script>
+	$('.stream').draggable();
+	function _$(a) {return document.getElementById(a);}
+	function ce(a) {return document.createElement(a);}
+	function ca(a) {return document.createAttribute(a);}
+
+	var progress = _$('pb');
+	var items = 0;
+	var mymoney = 0;
+	var myitems = 0;
+	var totalcost = 0;
+	var currency = null;
+	var users = {};
+
+	socket.once('connect', function () {
+		console.log("connect");
+		var cont = _$('game'); 
+		
+		socket.on('queue', function(data) {
+			console.log(data);
+			
+			var id = getSteamID();
+			if(id == data.steamid) {
+				$("#queue-num").html(data.number);
+			}
+			
+			$("#queue-length").html(data.all);
+		});
+		
+		socket.on('timer_r', function (data) {
+			if(data.timer_r >= 0) {
+				$('#timer').html(180 - data.timer_r);
+			}
+		});
+		
+		socket.on('progress_bar', function (data) {
+			$('#items-count-temp').html(data.items);
+			$('#pb').animate({ width: data.items+'%' }, 1000)
+		});
+		
+		socket.on('newitem', function (data) {
+			data.nickname = antispam(data.nickname);
+			if(!users[data.steamid]) {
+				users[data.steamid] = {
+					avatar: data.avatar,
+					nickname: data.nickname,
+					chance: 0,
+					totalprice: 0
+				};	
+			} else {
+				users[data.steamid].avatar = data.avatar;
+			}
+			
+			console.log(data);
+			var deposite = ce('tr');
+
+			var aclass = document.createAttribute('class');
+			aclass.value = 'item-bg';
+
+			var astyle = ca('style');
+			astyle.value = 'color: black; background-color: #'+data.color+';';
+
+			deposite.setAttributeNode(aclass);
+			deposite.setAttributeNode(astyle);
+
+			// image 1 TD
+			var image1td = ce('td');
+
+			var aclass = document.createAttribute('class');
+			aclass.value = 'col-ava';
+			image1td.setAttributeNode(aclass);
+
+			// prepare image
+			var image = ce('img');
+
+			var asrc = ca('src');
+			asrc.value = data.avatar;
+			image.setAttributeNode(asrc);
+
+			image1td.appendChild(image);
+
+			deposite.appendChild(image1td);
+	 
+			// text TD
+			var texttd = ce('td');
+			
+			var aclass = document.createAttribute('class');
+			aclass.value = 'col-text';
+			texttd.setAttributeNode(aclass);
+
+			// text
+			var text = ce('p');
+			text.innerHTML = "<a style=\"text-decoration: none;\" target=\"_blank\" href=\"" + data.profileurl + "\">" + data.nickname.replace(/(<|>)/g, '') + "</a> deposit <span>" + data.name_item + "</span> ($" + data.price_item + ")";
+			texttd.appendChild(text);
+
+			deposite.appendChild(texttd);
+
+			// image 2 TD
+			var image2td = ce('td');
+
+			var aclass = document.createAttribute('class');
+			aclass.value = 'col-img';
+			image2td.setAttributeNode(aclass);
+
+			// image 2 
+			image = ce('img');
+			image.style.width = "74px;";
+			image.style.height = "74px";
+
+			asrc = ca('src');
+			asrc.value = "http://steamcommunity-a.akamaihd.net/economy/image/"+ data.img_item +"/96fx96f";
+			image.setAttributeNode(asrc);
+
+			image2td.appendChild(image);
+
+			deposite.appendChild(image2td);
+
+			// add
+			var addtd = ce('td');
+
+			var aclass = document.createAttribute('class');
+			aclass.value = 'col-add';
+			addtd.setAttributeNode(aclass);
+
+			deposite.appendChild(addtd);
+
+			// insert deposite into list
+			cont.insertBefore(deposite, cont.firstChild);
+
+			// update items count
+			items++;
+			if(items > 100) {
+				items = 100;
+			}
+
+			//progress.style.width = items+"%";
+			//console.log(progress, items);
+			var SteamID = getSteamID();
+			totalcost += data.price_item;
+			if (data.steamid == SteamID) {
+				//_$('kolvo').innerHTML = "?? ?????? ? ???? - "+msg.itemcounter+" ?????????<br>??? ???? ???????? - "+msg.chance+"%";
+				$("#queue-num").html("You in!");
+				mymoney = data.price_item;
+				myitems++;
+			}
+			var winchance = 0;
+			if (totalcost > 0) {
+				winchance = mymoney / totalcost*100;
+				$("#totalcost").html("<b>Jackpot: $" + totalcost.toFixed(2) + "</b>");
+			}
+
+			//$('title').text("$" + totalcost.toFixed(2) + ' - CS:GOLotter.com');
+			$("#player-items-count").html(myitems);
+			//$("#chance-temp").html(winchance.toFixed(2));
+
+			
+			var $cont = $(".players-tape");
+			$cont.empty();
+
+			if (Object.keys(users).length > 0) {
+				if(users[Object.keys(users)[0]]["avatar"])
+					$cont.parent().removeClass('hidden');
+			}
+			
+			var usersCount = 0;
+			for(var i in users) {
+				var row = '<div class="players-percent-block">\
+						   <img src="' + users[i].avatar +'" alt="avatar">\
+						   <div class="players-percent-text">' + users[i].chance + '%</div>';
+
+				$cont.append(row);
+				usersCount++;
+			}
+			
+			if(usersCount > 9) {
+				$(".players-percent").css("width", (usersCount * 100) + "px");
+			} else {
+				$(".players-percent").css("width", "100%");
+			}
+		});
+		
+		socket.on('personal_info', function(data) {
+			console.log(users);
+			var $cont = $(".players-tape");
+			$cont.empty();
+
+			if (Object.keys(users).length > 0) {
+				if(users[Object.keys(users)[0]]["avatar"])
+					$cont.parent().removeClass('hidden');
+			}
+			
+			//console.log(data);
+			var SteamID = getSteamID();
+			if(SteamID) {
+				if(data.type == "success" && data.key == SteamID && data.typel != "chance") {
+					$("#chance-temp").html(data.chance.toFixed(2));
+				}				
+			}
+			
+			if(data.type == "success" && data["chance"] && data["key"]) {
+				if(users[data.key]) {
+					users[data.key].chance = data.chance;
+				} else {
+					users[data.key] = {};
+					users[data.key]["chance"] = data.chance;
+				}
+			}
+			
+			for(var i in users) {
+				var row = '<div class="players-percent-block">\
+						   <img src="' + users[i].avatar +'" alt="avatar">\
+						   <div class="players-percent-text">' + users[i].chance + '%</div>';
+
+				$cont.append(row);
+			}
+			
+			
+		});
+		
+		socket.on('newround', function (data) {
+			myitems = 0;
+			users = {};
+			$("#queue-num").html("0");
+			$("#totalcost").html("");
+			$("#timer").html(180);
+			$('.game-num').html(data.game);
+			$("#round_hash").html(data.roundhash);
+			$("#game").html('');
+			$('#pb').animate({ width: '0%' }, 1000);
+			$('#items-count-temp').html(0);
+
+			//clear
+			items = 0;
+			money = 0;
+			totalcost = 0;
+
+			$('#winner-end').text(' ??? ');
+
+			$('#items-count-temp').text('0');
+			$('.gameactive').removeClass('hidden');
+			$('.winner-cost-value').text('');
+			$('.winner-cost-valuta').text(' ' + currency);
+			$('.gameend').addClass('hidden');
+			$('.details-wrap').removeClass('hidden');
+			$('.all-players-list').empty();
+			$('.all-players-list').css('-moz-transform' ,'translate3d(390px, 0, 0)');
+			$('.all-players-list').css('-ms-transform' ,'translate3d(390px, 0, 0)');
+			$('.all-players-list').css('-o-transform' ,'translate3d(390px, 0, 0)');
+			$('.all-players-list').css('-webkit-transform' ,'translate3d(390px, 0, 0)');
+			$('.all-players-list').css('transform' ,'translate3d(390px, 0, 0)');
+			$('#game').empty();
+			$('.players-tape').empty();
+			$('.players-percent').addClass('hidden');
+			$('#player-items-count').html(0);
+			$('#chance-temp').text(0);
+			$('#gamestart-end').removeClass('hidden');
+			$('#gamestart-start').addClass('hidden');
+			//$('title').text('CS:GOPOOR.com');
+		});
+		
+		socket.on('sound', function() {
+			if(!getCookie("sound")){
+				$('#chatAudio')[0].play();
+			}
+		});
+		
+		socket.on('winner', function(data) {
+			data.nickname = antispam(data.nickname);
+			$('#winner-end').text(' ??? ');
+
+			$('#items-count-temp').text('0');
+			
+			$('.gameactive').addClass('hidden');
+			$('.gameend').removeClass('hidden');
+			$('.details-wrap').addClass('hidden');
+			$('#chance-temp').text('0');
+			$('#player-items-count').text('0');
+
+			$('.winner-cost-value').text("$" + data.money_round.toFixed(2));
+			$('.winner-cost-valuta').text('$');
+
+			// Tape 
+			$users = $('.players-tape').find('.players-percent-block');
+			var itemsTape = [];
+
+			$.each($users, function(index, el) {
+				var img_src = $(el).find('img').attr('src');
+				var chance_field = $(el).find('.players-percent-text').text();
+				var chance = parseFloat(chance_field.substr(0,chance_field.indexOf('%')));
+
+				for (var i = 0; i <= Math.round(chance); i++) {
+					itemsTape.push(img_src);
+				}
+			});
+
+			function shuffle(o){
+			    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+			    return o;
+			}
+
+			itemsTape = shuffle(itemsTape);
+			
+			
+			itemsTape[95] = users[data.steamid].avatar;
+			
+
+			$.each(itemsTape, function(i,v){
+				$('.all-players-list').append('<img src="' + v + '" />');
+			});
+
+			setTimeout(function(){
+				$('.all-players-list').css('-moz-transform' ,'translate3d(-7605px, 0, 0)');
+				$('.all-players-list').css('-ms-transform' ,'translate3d(-7605px, 0, 0)');
+				$('.all-players-list').css('-o-transform' ,'translate3d(-7605px, 0, 0)');
+				$('.all-players-list').css('-webkit-transform' ,'translate3d(-7605px, 0, 0)');
+				$('.all-players-list').css('transform' ,'translate3d(-7605px, 0, 0)');
+				setTimeout(function(){
+					$('#winner-end').text(data.nickname);
+					$("#winner-name").html(data.nickname);
+					$("#winner-chance").html(data.chance.toFixed(2));
+					$("#winner-money").html(data.money_round.toFixed(2));
+					$("#winner-avatar").html('<img src="' + users[data.steamid].avatar + '" alt="">');
+				}, 13000);
+
+			}, 1000);
+		});
+	});
+</script>
+</div>
+</div>
+<aside class="sidebar-left" role="complementary">
+    <!-- navigation  -->
+    <nav class="navigation">
+        <div class="title">Menu</div>
+        <ul class="navigation-list">
+            <li>
+                <a href="/">
+                    <div class="image">
+                        <span class="icon-sensor"></span>
+                    </div>
+                    <div class="text">Play</div>
+                </a>
+            </li>
+            <li>
+                <a href="/pages/about">
+                    <div class="image">
+                        <span class="icon-dialogue"></span>
+                    </div>
+                    <div class="text">About</div>
+                </a>
+            </li>
+            <li><a href="/history">
+                <div class="image">
+                    <span class="icon-book"></span>
+                </div>
+                <div class="text">History</div>
+            </a></li>
+			        </ul>
+    </nav>
+    <!-- navigation end -->
+
+    <!--<div class="side-banner">
+        <a href="http://steamcommunity.com/id/user/edit" target="_blank"></a>
+    </div>-->
+
+	    <div class="side-last-winner">
+        <div class="title">Last winner:</div>
+        <div class="player-image" id="winner-avatar"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/19/19b5728d9bfacbf9fde14d26908c73212dc450d5_full.jpg" alt=""></div>
+        <div class="name" id="winner-name">? Bootmeister CSGOPOOR.COM</div>
+    </div>
+    <div class="side-last-winner-bottom">
+        <div class="captions">
+            Price:<br>
+            Chance:
+        </div>
+        <div class="numbers">
+            <div class="sum">~ <span id="winner-money">46.65</span>$</div>
+			<div class="chance"><span id="winner-chance">10.32</span>%</div>
+        </div>
+    </div>
+		
+    <!-- side-online -->
+    <!--<div class="side-online">
+        <span class="title">?????? ?? ????? ???????:</span> <span class="online-num" id="inf1">0</span>
+    </div>-->
+    <!-- side-online end -->
+
+    <!-- side-support -->
+	<div class="side-support">
+        <a href="https://twitter.com/csgopoor" target="_blank">Twitter</a>
+    </div>
+	
+	 <div class="side-support">
+        <a href="http://steamcommunity.com/groups/CSGOPOOR" target="_blank">Steam</a>
+    </div>
+	
+	<div class="side-support">
+        <a href="http://csgopoor.com/pages/support" target="_blank">Support</a>
+    </div>
+	
+    
+    <!-- side-support end -->
+</aside>
+</div>
+</div>
+</div>
+</div>
+<script>
+	function antispam(nick) {
+		var result = nick.replace(/\s+/, "").match(/(([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?)/i);
+		if(result && !result[1].match(/csgopoor\.com/i))
+			return "***";
+			//return nick.replace(/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/i, "***");
+		return nick;
+	}
+	
+	if($.cookie("sound")){
+           $("#soundbut").text("Sounds on");
+		   $(this).removeClass("fa-volume-off");
+		   $(this).addClass("fa-volume-up");
+           state=0;
+    }else{
+		   $(this).removeClass("fa-volume-up");
+		   $(this).addClass("fa-volume-off");
+           $("#soundbut").text("Sounds off");
+           state=1;
+    }
+	
+	$(".soundoff").on("click", function() {
+		if($(this).hasClass("fa-volume-up")) {
+			$(this).removeClass("fa-volume-up");
+			$(this).addClass("fa-volume-off");
+			
+			$.cookie("sound","1");
+			state = 0;
+		} else {
+			$(this).removeClass("fa-volume-off");
+			$(this).addClass("fa-volume-up");
+
+			state=1;
+            $.removeCookie("sound");
+            //$('#chatAudio')[0].play();
+		}
+	});
+	
+	$("#soundbut").on("click",function(){
+        if(state==1){
+            $.cookie("sound", "1");
+            $("#soundbut").text("Sounds on");
+            state=0;
+        }else{
+            state=1;
+            $.removeCookie("sound");
+            //$('#chatAudio')[0].play();
+            $("#soundbut").text("Sounds off");
+        }
+    });
+
+    socket.on('chatdel', function () {
+	    $('.main-chat').html('');
+    });
+    
+	socket.on('chatdel', function () {
+	    $('.main-chat').html('');
+    });
+
+	socket.on('chat', function (data) {
+		var ban_list = [/csgoput/gi, /csgofade/gi, /SUPERSKINS/gi, /csgo\s+fade/gi, /csgoraffle/gi, /csgofast/gi, /csgoraffling/gi,
+		/csgohomeless/gi, /lockthepot/gi, /csgorebel/gi, /hotlinecsgo/gi];
+		data.nickname = antispam(data.nickname);
+		data.msg = data.msg
+			.replace(/[^\w|\.|\,|\!|\-|\?|%|?-?|?-?|\(|\)|\s|&]+/, "")
+			.replace(/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/i, "CSGOPOOR the best");
+		
+		var msg = data.msg.replace(/\s+/gi, "");
+		for(var i in ban_list) {
+			if(ban_list[i].test(msg)) {
+				data.msg = "CSGOPOOR the best";
+				break;
+			}
+		}
+		
+		if(/CSGOPOOR BOT/.test(data.nickname))
+			return;
+		if($('.block-msgs').length > 100) {
+		    $('.block-msgs')[0].remove();
+		}
+		var template = "<li><a class='thumbnail' style='width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;' href='#'><img src='"+ data.avatar +"'></a><div class='content'><h3>" + data.nickname + "</h3><span class='preview'>" + data.msg + "</span></div></li>";
+		$('.block-msgs').append(template);
+		while($('.block-msgs')[0].childNodes.length > 15) {
+			$('.block-msgs > li:first-child').remove();
+		}
+		chatScroll();
+	});
+	
+	socket.on('sound2', function() {
+		if(!getCookie("sound")){
+			$('#chatmsg')[0].play();
+		}
+	});
+	
+	$(function() {
+		$('.chat').draggable({ handle: 'header' });
+	});
+
+	$(document).foundation();
+	$('.head').css( "background-size", "cover" );
+	$('.projera').css( "background-size", "cover" );
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter31594868 = new Ya.Metrika({
+                    id:31594868,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/31594868" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body></html>
