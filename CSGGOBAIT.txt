@@ -1912,7 +1912,7 @@ a[class^="btn-"],a[class*=" btn-"],div[class^="btn-"],div[class*=" btn-"] {
 
 .about-title {
   font-weight: 700;
-  color: white;
+  color: blue;
   text-transform: uppercase;
 }
 
