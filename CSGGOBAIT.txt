@@ -3660,8 +3660,7 @@ td.plank-td {
         </div>-->
         <!-- game-price end -->
 <a href="/login" class="btn-yellow action-login come_and_play">
-    <span class="icon-steam"></span>
-    <span class="text">Login</span>
+    <span class="text">SIGN IN THROUGH STEAM</span>
 </a>
    
  </div>
@@ -3670,9 +3669,9 @@ td.plank-td {
         <div class="details-wrap"><!-- detailswrapclass -->
             <div class="details type-second">
                 <div class="details-left">
-                    <p>You deposit: - </p><p class="player-items-num" id="player-items-count">0</p> <span>(of 10)</span> skins<p></p>
-					<div>The minimum amount of placed skins price is 0.01$</div> 
-					<div>Breakout, Phoenix and Chroma cases are not accepted.</div>
+                    <p>You deposit: - </p><p class="player-items-num" id="player-items-count">0</p> <span>(of 10)</span> SKINS<p></p>
+					<div>(The minimum amount of placed skins price is 0.03$)</div> 
+								<div class="gametime-text">THIS ROUN BAIT CODE: <span id="round_hash">06d432f1e1bd81693e92a96fa8a1f8bb</span></div>
                 </div>
                 <i class="arrow-gray-right"></i>
                 <div class="details-middle">
@@ -3680,7 +3679,6 @@ td.plank-td {
                     <!--div><a class="open-drop-count" href="#">??? ??????????</a></div-->
                 </div>
 								<div class="details-right">
-                    REMEMBER TO: Set trade link in settings!
                 </div>	
 				            </div>
         </div>
@@ -3704,23 +3702,20 @@ td.plank-td {
         </div>
         <!-- game-table end -->
         <div class="gametime gamestart">
-            <span class="icon-start"></span>
-            <div class="gametime-text">Game start!</div>
-			<div class="gametime-text">Round hash: <span id="round_hash">06d432f1e1bd81693e92a96fa8a1f8bb</span></div>
+
         </div>
     </div>
     <p class="steampowered">Powered by Steam, a registered trademark of Valve Corporation.</p>
 </div>
 
 
-<div class="hide-for-small-only hide-for-medium-only chat chat ui-draggable">
+<div class="hide-for-small-only hide-for-medium-only chat chat not-draggable">
   <header class="ui-draggable-handle">
     <h2 class="title">
-      <a href="#">CHAT</a>
+      <a href="#">CSGOBAIT Rage Chat!</a>
     </h2>
     <ul class="tools">
 	  <li>
-		<a class="fa fa-volume-up soundoff" href="#"></a>
 	  </li>
       <li>
         <a class="fa fa-minus closech" href="#"></a>
@@ -4090,14 +4085,14 @@ td.plank-td {
     </nav>
     <!-- navigation end -->
 
-    <!--<div class="side-banner">
+    <!--<div class="banner">
         <a href="http://steamcommunity.com/id/user/edit" target="_blank"></a>
     </div>-->
 
 	    <div class="side-last-winner">
-        <div class="title">Last winner:</div>
-        <div class="player-image" id="winner-avatar"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/19/19b5728d9bfacbf9fde14d26908c73212dc450d5_full.jpg" alt=""></div>
-        <div class="name" id="winner-name">? Bootmeister CSGOPOOR.COM</div>
+        <div class="title">LAST MASTER BAITOR:</div>
+        <div class="player-image" id="winner-avatar"><img src="" alt=""></div>
+        <div class="name" id="winner-name"></div>
     </div>
     <div class="side-last-winner-bottom">
         <div class="captions">
@@ -4105,8 +4100,8 @@ td.plank-td {
             Chance:
         </div>
         <div class="numbers">
-            <div class="sum">~ <span id="winner-money">46.65</span>$</div>
-			<div class="chance"><span id="winner-chance">10.32</span>%</div>
+            <div class="sum">~ <span id="winner-money"></span>$</div>
+			<div class="chance"><span id="winner-chance"></span>%</div>
         </div>
     </div>
 		
@@ -4203,7 +4198,7 @@ td.plank-td {
 		var msg = data.msg.replace(/\s+/gi, "");
 		for(var i in ban_list) {
 			if(ban_list[i].test(msg)) {
-				data.msg = "CSGOPOOR the best";
+				data.msg = "CSGOBAIT - Skin jackpot for everyone!";
 				break;
 			}
 		}
