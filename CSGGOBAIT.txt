@@ -3050,8 +3050,8 @@ a[class^="btn-"],a[class*=" btn-"],div[class^="btn-"],div[class*=" btn-"] {
   top: 0;
   left: 0;
   height: 100%;
-  width: 950px;
-  background: #f54e40 url(../img/bg/zebra.png) 0 0 repeat-x;
+  width: 180px;
+  background: #f54e40 url(http://i.imgur.com/Mnq1ymk.png) 0 0 repeat-x;
   -webkit-animation: stripes 3s linear infinite;
   animation: stripes 3s linear infinite;
 }
@@ -3150,7 +3150,7 @@ td.plank-td {
 
 .players-percent {
   width: 100%;
-  background: rgba(255,0,0,0.8);
+  background: rgba(77, 184, 112);
   overflow: hidden;
   position: relative;
 }
