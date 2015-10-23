@@ -8,9 +8,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-<link rel="stylesheet" href=" http://csgopoor.com/css/framework/normalize.css">
-<link rel="stylesheet" href=" http://csgopoor.com/css/framework/foundation.min.css">
-<link href="http://csgopoor.com/css/widgets.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href=" http://csgobait.com/css/framework/normalize.css">
+<link rel="stylesheet" href=" http://csgobait.com/css/framework/foundation.min.css">
+<link href="http://csgobait.com/css/widgets.css" rel="stylesheet" media="screen">
 <style media="screen" type="text/css">
 
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,700italic,400italic&subset=latin,cyrillic-ext);
@@ -1912,7 +1912,7 @@ a[class^="btn-"],a[class*=" btn-"],div[class^="btn-"],div[class*=" btn-"] {
 
 .about-title {
   font-weight: 700;
-  color: blue;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -3488,17 +3488,17 @@ td.plank-td {
 <!--[if gte IE 9]><link rel="stylesheet" href="/css/ie9.css" media="screen, projection"><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" media="screen, projection"><![endif]-->
 <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" media="screen, projection"><![endif]-->
-<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="http://csgopoor.com/js/libs/jquery-2.1.3.min.js"></script><style type="text/css"></style>
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script src="http://csgobait.com/js/libs/jquery-2.1.3.min.js"></script><style type="text/css"></style>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="http://csgopoor.com/js/libs/jquery-ui.min.js"></script>
-<script src="http://csgopoor.com/js/framework/vendor/modernizr.js"></script>
-<script src="http://csgopoor.com/js/framework/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
-<script src="http://csgopoor.com/js/plugins/backgroundimg.js"></script>
-<script src="http://csgopoor.com/js/plugins/jquery.tablesorter.min.js"></script>
-<script src="http://csgopoor.com/js/jquery.noty.packaged.min.js"></script>
-<script src="http://csgopoor.com/js/jquery.cookie.js"></script>
+<script src="http://csgobait.com/js/libs/jquery-ui.min.js"></script>
+<script src="http://csgobait.com/js/framework/vendor/modernizr.js"></script>
+<script src="http://csgobait.com/js/framework/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge-only"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large-only"><meta class="foundation-mq-large"><meta class="foundation-mq-medium-only"><meta class="foundation-mq-medium"><meta class="foundation-mq-small-only"><meta class="foundation-mq-small"><style></style>
+<script src="http://csgobait.com/js/plugins/backgroundimg.js"></script>
+<script src="http://csgobait.com/js/plugins/jquery.tablesorter.min.js"></script>
+<script src="http://csgobait.com/js/jquery.noty.packaged.min.js"></script>
+<script src="http://csgobait.com/js/jquery.cookie.js"></script>
 <script src="https://cdn.socket.io/socket.io-1.3.4.js"></script>
-<script src="http://csgopoor.com/script.js"></script>
+<script src="http://csgobait.com/script.js"></script>
 <script type="text/javascript">
 		var socket = io('keylucky.com:1731');
 		var key = 'demo';
@@ -3671,7 +3671,7 @@ td.plank-td {
                 <div class="details-left">
                     <p>You deposit: - </p><p class="player-items-num" id="player-items-count">0</p> <span>(of 10)</span> SKINS<p></p>
 					<div>(The minimum amount of placed skins price is 0.03$)</div> 
-								<div class="gametime-text">THIS ROUN BAIT CODE: <span id="round_hash">06d432f1e1bd81693e92a96fa8a1f8bb</span></div>
+								<div class="gametime-text">THIS ROUND BAIT CODE: <span id="round_hash">06d432f1e1bd81693e92a96fa8a1f8bb</span></div>
                 </div>
                 <i class="arrow-gray-right"></i>
                 <div class="details-middle">
@@ -3705,14 +3705,14 @@ td.plank-td {
 
         </div>
     </div>
-    <p class="steampowered">Powered by Steam, a registered trademark of Valve Corporation.</p>
+    <p class="steampowered"> - Powered by Steam, a registered trademark of Valve Corporation - </p>
 </div>
 
 
 <div class="hide-for-small-only hide-for-medium-only chat chat not-draggable">
   <header class="ui-draggable-handle">
     <h2 class="title">
-      <a href="#">CSGOBAIT Rage Chat!</a>
+      <a href="#">CSGOBAIT Rage Chat</a>
     </h2>
     <ul class="tools">
 	  <li>
@@ -3724,7 +3724,7 @@ td.plank-td {
   </header>
   <div class="main-chat body">
     <ul class="block-msgs">
-    <li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/56/569530cd147b9a5f7b743e00341cc0c0eba5c01d_full.jpg"></a><div class="content"><h3>Not Pikachu  ��</h3><span class="preview">Lodus wants to lose the ak</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://...(line truncated)...
+    <li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/56/569530cd147b9a5f7b743e00341cc0c0eba5c01d_full.jpg"></a><div class="content"><h3>Not Pikachu  ??</h3><span class="preview">Lodus wants to lose the ak</span></div></li><li><a class="thumbnail" style="width: 40px; height: 30px; background: rgba(0, 0, 0, 0); padding-bottom: 10px;" href="#"><img src="https://...(line truncated)...
   </div>
 
   <div class="row footer">
@@ -3739,12 +3739,6 @@ td.plank-td {
 	</div>
   </div>
 </div>
-
-<!-- Stream -->
-<!-- <div class="stream" style="position: fixed; right: -30px; bottom: 400px;">
-	<div style="width: 300px; height: 30px; background: rgba(255,0,0,0.8); color: blue; font-weight: bold; cursor: move;">&nbsp;Official partner</div>
-	<iframe src="http://www.twitch.tv/russiapaver/embed" frameborder="0" scrolling="no" height="300" width="300"></iframe><a href="http://www.twitch.tv/russiapaver?tt_medium=live_embed&tt_content=text_link" style="padding:2px 0px 4px; display:block; width:345px; font-weight:normal; font-size:10px;text-decoration:underline;">Watch live video from RussiaPaver on www.twitch.tv</a>
-</div> -->
 
 <script>
 	$('.stream').draggable();
@@ -4090,7 +4084,7 @@ td.plank-td {
     </div>-->
 
 	    <div class="side-last-winner">
-        <div class="title">LAST MASTER BAITOR:</div>
+        <div class="title">LAST MASTER BAITER:</div>
         <div class="player-image" id="winner-avatar"><img src="" alt=""></div>
         <div class="name" id="winner-name"></div>
     </div>
@@ -4112,16 +4106,18 @@ td.plank-td {
     <!-- side-online end -->
 
     <!-- side-support -->
-	
+	<font color="blue">
 	 <div class="side-support">
-        <a href="http://steamcommunity.com/groups/CSGOBAIT" target="_blank">Steam</a>
+        <a href="http://steamcommunity.com/groups/CSGOBAIT" target="_blank">Steam Group</a>
     </div>
 	
 	<div class="side-support">
-        <a href="http://csgopoor.com/pages/support" target="_blank">Support</a>
+        <a href="http://csgobait.com/support/" target="_blank">Support</a>
     </div>
-	
-    
+    <div class="side-support">
+        <a href="http://csgobait.com/tos/" target="_blank">Terms Of Service</a>
+    </div>
+	</font>
     <!-- side-support end -->
 </aside>
 </div>
@@ -4131,7 +4127,7 @@ td.plank-td {
 <script>
 	function antispam(nick) {
 		var result = nick.replace(/\s+/, "").match(/(([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?)/i);
-		if(result && !result[1].match(/csgopoor\.com/i))
+		if(result && !result[1].match(/csgobait\.com/i))
 			return "***";
 			//return nick.replace(/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/i, "***");
 		return nick;
@@ -4193,7 +4189,7 @@ td.plank-td {
 		data.nickname = antispam(data.nickname);
 		data.msg = data.msg
 			.replace(/[^\w|\.|\,|\!|\-|\?|%|?-?|?-?|\(|\)|\s|&]+/, "")
-			.replace(/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/i, "CSGOPOOR the best");
+			.replace(/([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/i, "wrong character!");
 		
 		var msg = data.msg.replace(/\s+/gi, "");
 		for(var i in ban_list) {
@@ -4258,5 +4254,3 @@ td.plank-td {
 </script>
 <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/31594868" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
 <!-- /Yandex.Metrika counter -->
-
-</body></html>
